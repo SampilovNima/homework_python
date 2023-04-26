@@ -22,12 +22,13 @@ while (n1>0):
     else:    
         s1 = s1 + m
         n1 = n1 - 1
-while (m2>0):
-    if (k==s2):
-        print ('yes'),
-        break
-    else: 
-        s2 = s2 + n
-        m2 = m2 - 1
+if (k!=s1):        
+    while (m2>0):
+        if (k==s2):
+            print ('yes'),
+            break
+        else: 
+            s2 = s2 + n
+            m2 = m2 - 1   
 if (k!=s1) and (k!=s2):
     print ('no')
