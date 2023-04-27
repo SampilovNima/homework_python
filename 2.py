@@ -6,10 +6,12 @@
 print('Загадайте два числа x и y <=1000 и введите их сумму(s) и произведение(p):')
 s = int(input('s= '))
 p = int(input('p= '))
+
 d = s*s-4*p
 x = (s + d ** (0.5))/2
-
-
 y = s - x
 
-print('x =',int(x),' y =',int(y))
+if int(x)+int(y)==s and int(x)*int(y)==p:
+    print('x =',int(x),' y =',int(y))
+else:    
+    print('Данные введены некорректно')
